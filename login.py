@@ -1,5 +1,5 @@
 import requests
-url = 'http://localhost/firstexercise/index.php'
+url = 'http://192.168.6.2/loginexercise/index.php'
 values = {
 	'login': 'letmein',
 	'username': 'student',
