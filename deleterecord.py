@@ -1,4 +1,4 @@
-import requests
+### import requests
 s = requests.Session()
 url = 'http://192.168.6.2/index.php'
 values = {
@@ -14,5 +14,5 @@ while i< 100:
 	url2 = 'http://192.168.6.2/deletecomment.php?commentid='+str(i)
 	i+=1
 	print url2
-	r2 = s.get(url2)
+	r2 = s.get(url2) ###
 
