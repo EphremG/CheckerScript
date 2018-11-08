@@ -1,6 +1,6 @@
 import requests
 s = requests.Session()
-url = 'http://192.168.6.2/ctf/index.php'
+url = 'http://192.168.6.2/index.php'
 values = {
 	'login': 'letmein',
 	'username': 'ephrem',
