@@ -13,7 +13,7 @@ r = s.post(url, data=values)
 url2 = 'http://192.168.6.2/ctf/profile.php?profile=Mg=='
 r2 = s.get(url2)
 #print r2.url
-if 'Abeni' in r2.content:
+if 'Abeni' in str(r2.content):
 	print('You have not fixed the vulnerable Yet! :(')
 else:
 	print('Congratulations, You have Successfuly fixed the issue! :)')
