@@ -15,6 +15,7 @@ r2 = s.get(url2)
 #print r2.url
 if 'Abeni' in str(r2.content):
 	print('You have not fixed the vulnerable Yet! :(')
+	exit(1)
 else:
 	print('Congratulations, You have Successfuly fixed the issue! :)')
-
+	exit(0)
