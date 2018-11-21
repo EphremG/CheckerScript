@@ -4,7 +4,7 @@ import requests
 connection = mysql.connector.connect(
   host="localhost",
   user="root",
-  passwd="",
+  passwd="rootroot",
   database="srms"
 )
 
