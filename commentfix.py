@@ -34,5 +34,7 @@ url = 'http://192.168.6.2/deletecomment.php?commentid=2'
 url = s.get(url)
 if 'ABENI' in str(url.content):
 	print('Congratulations, You have Successfuly fixed the issue! :)')
+	exit(0)
 else:
 	print('You have not fixed the vulnerable Yet! :(')
+	exit(1)
