@@ -2,7 +2,7 @@ import mysql.connector
 import requests
 
 connection = mysql.connector.connect(
-  host="localhost",
+  host="192.168.6.2",
   user="root",
   passwd="rootroot",
   database="srms"
