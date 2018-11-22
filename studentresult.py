@@ -17,7 +17,7 @@ if 'syntax error' in str(r2.content):
 	print('1 You have not fixed the vulnerable Yet! :(')
 	exit(1)
 elif str(r2.content) == '':
-	print('2You have not fixed the vulnerable Yet! :(')
+	print('Content is empty :(')
 	exit(1)
 elif 'Abeni' not in str(r2.content) and str(r2.content) != '':
 	print(' Congratulations, You have Successfuly fixed the issue! :)')
