@@ -12,12 +12,16 @@ r = s.post(url, data=values)
 #print(r.url)
 url2 = 'http://192.168.6.2/result.php?rollid=2&class=1'
 r2 = s.get(url2)
-if (r2.status_code == requests.codes.ok):
-	if 'Abeni' in str(r2.content):
-		print('You have not fixed the vulnerable Yet! :(')
-		exit(1)
-	else:
-		print('Congratulations, You have Successfuly fixed the issue! :)')
-		exit(0)
+#print(r2.status_code)
+if 'syntax error' in str(r2.content):
+	print('1 You have not fixed the vulnerable Yet! :(')
+	exit(1)
+elif str(r2.content) == '':
+	print('2You have not fixed the vulnerable Yet! :(')
+	exit(1)
+elif 'Abeni' not in str(r2.content) and str(r2.content) != '':
+	print(' Congratulations, You have Successfuly fixed the issue! :)')
+	exit(0)
 else:
+	print('3You have not fixed the vulnerable Yet! :(')
 	exit(1)
