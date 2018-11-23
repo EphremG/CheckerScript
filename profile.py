@@ -10,11 +10,22 @@ values = {
 
 r = s.post(url, data=values)
 #print(r.url)
-url2 = 'http://192.168.6.2/profile.php?profile=Mg=='
+url3 = 'http://localhost/ctf/profile.php?profile=MQ=='
+check = s.get(url3)
+url2 = 'http://localhost/ctf/profile.php?profile=Mg=='
 r2 = s.get(url2)
 #print r2.url
-if 'Abeni' in str(r2.content):
+if 'Abeni' in r2.content:
 	print('You have not fixed the vulnerable Yet! :(')
+	exit(1)
+elif 'Ephrem' not in str(check.content):
+	print('You have not fixed the vulnerable Yet! :(')
+	exit(1)
+elif 'syntax error' in r2.content:
+	print('You have not fixed the vulnerable Yet! :(')
+	exit(1)
+elif str(r2.content) == '':
+	print('2You have not fixed the vulnerable Yet! :(')
 	exit(1)
 else:
 	print('Congratulations, You have Successfuly fixed the issue! :)')
