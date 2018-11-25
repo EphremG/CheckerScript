@@ -10,9 +10,9 @@ values = {
 
 r = s.post(url, data=values)
 #print(r.url)
-url3 = 'http://localhost/ctf/profile.php?profile=MQ=='
+url3 = 'http://192.168.6.2/profile.php?profile=MQ=='
 check = s.get(url3)
-url2 = 'http://localhost/ctf/profile.php?profile=Mg=='
+url2 = 'http://192.168.6.2/profile.php?profile=Mg=='
 r2 = s.get(url2)
 #print r2.url
 if 'Abeni' in r2.content:
