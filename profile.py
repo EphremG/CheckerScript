@@ -18,9 +18,9 @@ r2 = s.get(url2)
 if 'Abeni' in r2.content:
 	print('You have not fixed the vulnerable Yet! :(')
 	exit(1)
-elif 'Ephrem' not in str(check.content):
-	print('You have not fixed the vulnerable Yet! :(')
-	exit(1)
+#elif 'Ephrem' not in str(check.content):
+#	print('You have not fixed the vulnerable Yet! :(')
+#	exit(1)
 elif 'syntax error' in r2.content:
 	print('You have not fixed the vulnerable Yet! :(')
 	exit(1)
