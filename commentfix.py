@@ -32,10 +32,10 @@ r = s.post(url, data=values)
 url = 'http://192.168.6.2/deletecomment.php?commentid=2'
 
 url = s.get(url)
-if 'syntax error' in str(r2.content):
+if 'syntax error' in str(url.content):
 	print('1 You have not fixed the vulnerable Yet! :(')
 	exit(1)
-elif str(r2.content) == '':
+elif str(url.content) == '':
 	print('2You have not fixed the vulnerable Yet! :(')
 	exit(1)
 elif 'ABENI' in str(url.content):
