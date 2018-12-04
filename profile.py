@@ -28,5 +28,5 @@ elif str(r2.content) == '':
 	print('2You have not fixed the vulnerable Yet! :(')
 	exit(1)
 else:
-	print('Congratulations, You have Successfuly fixed the issue! :)')
+	print('Congratulations, You have Successfully fixed the issue! :)')
 	exit(0)
